@@ -1,0 +1,23 @@
+﻿@page
+@model PrimeiraAplicacao.Pages.DeletarModel
+@{
+}
+
+<div class="box cta">
+    <p class="title has-text-centered">
+        Deletar Um Carro
+    </p>
+</div>
+
+<form id="formulario" method="POST" class="has-text-centered">
+    <label>ID do Carro</label>
+    <input type="text" name="id"><br>
+
+    <div class="has-text-centered buttonRemover">
+        <input type="submit" class="btn btn-primary" id="enter" value="Remover">
+        <button type="button" class="btn btn-primary" id="voltar" onclick="window.location='Index';">Tela Inicial</button>
+    </div>
+
+</form>
+
+

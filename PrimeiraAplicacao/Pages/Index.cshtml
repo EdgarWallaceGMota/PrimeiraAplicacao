@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@using Microsoft.AspNetCore.Http;
+
+<section class="hero is-info is-small">
+    <div class="hero-body has-text-centered">
+        <div class="container">
+            <p class="title">Krypton - Teste Desenvolvedor Web</p>
+            <p class="subtitle">Tarefa Um</p>
+        </div>
+    </div>
+</section>
+<div class="box cta">
+    <p class="has-text-centered">Edgar Wallace Gonçalves Mota</p>
+</div>
+
+<div class="has-text-centered">
+    <button type="button" class="btn btn-primary" id="adicionar" onclick="window.location='Adicionar';"> Inserir Carro</button>
+    <button type="button" class="btn btn-primary" id="remover" onclick="window.location='Deletar';"> Deletar Carro</button>
+</div>
+<br>
+
+    @Html.Raw(HttpContext.Session.GetString("Carros"))
